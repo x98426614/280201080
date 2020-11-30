@@ -1,13 +1,41 @@
-a = int(input("Range of fibonacci: "))
-n1 = 0
-n2 = 1
+file_path = "members.txt"
+file = open(file_path)
+each_line = file.readline()
+dictionary = {}
+counter = True
+while counter:
+  name = each_line.split(": ")[0]
+  email = each_line.split(": ")[1]
+  a = name
+  b = email
+  c = {a,b}
+  dictionary.update(c)
+  if each_line == "\n":
+    counter = False
 
-for i in range(1,a+1):
-  n3= n2+n1
-  n1 = n2
-  n2 = n3
-  print(n3)
 
 
 
-#purpose of this folder and file is to test the bottom line codes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Purpose of this file and folder is to test bottom line codes.
