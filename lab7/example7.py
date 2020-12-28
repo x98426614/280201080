@@ -16,3 +16,13 @@ for i in books:
   book_dict[i] = value1,value2,value3
 
 print(book_dict)
+
+#New example
+
+employees = dict()
+
+for _ in range(5):
+  name = input("Please enter your name: ")
+  salary = int(input("Please enter your salary: "))
+  employees[name] = salary
+  

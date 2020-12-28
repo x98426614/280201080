@@ -1,21 +1,10 @@
-file_path = "members.txt"
-file = open(file_path)
-each_line = file.readline()
-dictionary = {}
-counter = True
-while counter:
-  name = each_line.split(": ")[0]
-  email = each_line.split(": ")[1]
-  a = name
-  b = email
-  c = {a,b}
-  dictionary.update(c)
-  if each_line == "\n":
-    counter = False
+x = 1
 
+def deneme():
+  x = x + 1
+  return x
 
-
-
+print(deneme())
 
 
 
